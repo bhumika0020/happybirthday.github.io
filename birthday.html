@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Love!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffb199);
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 3.5rem;
+            animation: fadeOut 2s ease-in;
+        }
+        @keyframes fadeOut {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .balloons {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .balloon {
+            position: absolute;
+            bottom: -150px;
+            width: 60px;
+            height: 100px;
+            background: radial-gradient(circle, #ff9a9e, #fad0c4);
+            border-radius: 50% 50% 50% 50%;
+            animation: floatUp 5s ease-in-out infinite;
+        }
+
+        .balloon:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .balloon:nth-child(2) {
+            left: 30%;
+            animation-delay: 1s;
+            background: radial-gradient(circle, #fbc2eb, #a18cd1);
+        }
+
+        .balloon:nth-child(3) {
+            left: 50%;
+            animation-delay: 2s;
+            background: radial-gradient(circle, #fdcbf1, #e6dee9);
+        }
+
+        .balloon:nth-child(4) {
+            left: 70%;
+            animation-delay: 3s;
+            background: radial-gradient(circle, #ffecd2, #fcb69f);
+        }
+
+        .balloon:nth-child(5) {
+            left: 90%;
+            animation-delay: 4s;
+            background: radial-gradient(circle, #a1c4fd, #c2e9fb);
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(-100vh);
+            }
+        }
+
+        .message {
+            margin-top: 40px;
+            font-size: 1.5rem;
+            color: #fff;
+            text-align: center;
+            max-width: 600px;
+            animation: fadeOut 2s ease-in;
+        }
+
+    
+      
+    </style>
+</head>
+<body>
+    <h1> once again Happy Birthday Handsome, ILYSM !</h1>
+    <div class="balloons">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
+    <div class="heart"></div>
+    <div class="message">You light up my life in so many ways. I hope your birthday is as wonderful as you are!
+Over the past 1.5 years, you've become my everything—my partner, my best friend, my confidant, and my safe haven. Even though distance separates us, you’re always the closest person to my heart. I cherish every moment we’ve spent together, and I can’t wait for all the ones still to come.
+You’re the one I turn to with my secrets, my silly gossip, and my wildest dreams. With you, I can be my truest self. Your love makes my world brighter, and your presence in my life fills me with endless happiness and strength.
+I miss you more than words can say, but I hold onto the thought of us being together again soon. You mean the world to me, and I love you more than anything. </div>
+</body>
+</html>

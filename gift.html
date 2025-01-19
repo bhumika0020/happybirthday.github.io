@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+  
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeOut 2s ease-in;
+        }
+
+    
+
+        video {
+            border: 5px solid white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .gift-box {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background-color: #ff6f61;
+            border-radius: 10px;
+            cursor: pointer;
+            animation: bounce 1s infinite;
+        }
+
+        .gift-box::before, .gift-box::after {
+            content: '';
+            position: absolute;
+            background-color: #fff;
+        }
+
+        .gift-box::before {
+            width: 20px;
+            height: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .gift-box::after {
+            width: 150px;
+            height: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .ribbon {
+            position: absolute;
+            width: 150px;
+            height: 20px;
+            background-color: #fff;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+   
+        @keyframes fadeOut {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 10;
+            }
+        }
+
+        .message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.5em;
+            animation: fadeOut 2s ease-in;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday, baby !</h1>
+    <video controls width="600" src="c:\Users\bhumi\Videos\Screen Recordings\Screen Recording 2025-01-09 143027.mp4"></video>
+    <div class="gift-box" onclick="openGift()">
+        <div class="ribbon"></div>
+    </div>
+    <div class="message" id="message">
+         You're the best thing in my life! thank you so much for coming in my life and everything you did for me.💖
+    </div>
+
+    <script>
+        function openGift() {
+            const message = document.getElementById('message');
+            message.style.display = 'block';
+            alert('i will stick with you just like this , you are my best gift 🎁');
+        }
+    </script>
+    <a href="file:///C:/Users/bhumi/OneDrive/Desktop/happpy%20birthday/birthday.html">~ continue ~</a>
+</body>
+</html>
